@@ -1,0 +1,26 @@
+﻿{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "FluentAssertions": "4.17.0",
+    "Microsoft.Azure.Management.Search": "1.0.2",
+    "Microsoft.Azure.Search": "3.0.4",
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.1"
+    },
+    "MongoDB.Bson": "2.4.4",
+    "MongoDB.Driver": "2.4.4",
+    "MongoDB.Driver.Core": "2.4.4",
+    "WindowsAzure.Storage": "8.2.0"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  }
+}
