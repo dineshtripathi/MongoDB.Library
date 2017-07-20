@@ -1,9 +1,7 @@
 {
-  "version": "1.0.0-*",
   "buildOptions": {
     "emitEntryPoint": true
   },
-
   "dependencies": {
     "AutoMapper": "6.1.1",
     "Autofac.Configuration": "4.0.1",
@@ -21,11 +19,12 @@
     "runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR": "1.1.2",
     "System.Runtime.Serialization.Primitives": "4.3.0",
     "Autofac": "4.6.0"
+    
   },
-
   "frameworks": {
     "netcoreapp1.0": {
       "imports": "dnxcore50"
     }
-  }
+  },
+  "version": "1.0.0-*"
 }

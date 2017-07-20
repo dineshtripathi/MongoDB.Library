@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MongoDBLibrary", "src\MongoDBApplicaiton\MongoDBLibrary.xproj", "{009D9606-2AC3-48CB-99E7-D69250A57B65}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MongoDB.Client.Library", "src\MongoDB.Client.Library\MongoDB.Client.Library.xproj", "{DA32B10E-41EF-4AA0-A5CE-0AC6AA85A205}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +24,16 @@ Global
 		{009D9606-2AC3-48CB-99E7-D69250A57B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{009D9606-2AC3-48CB-99E7-D69250A57B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{009D9606-2AC3-48CB-99E7-D69250A57B65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA32B10E-41EF-4AA0-A5CE-0AC6AA85A205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA32B10E-41EF-4AA0-A5CE-0AC6AA85A205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA32B10E-41EF-4AA0-A5CE-0AC6AA85A205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA32B10E-41EF-4AA0-A5CE-0AC6AA85A205}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{009D9606-2AC3-48CB-99E7-D69250A57B65} = {7B95CD87-A04E-4B32-AE81-DAF792FE02B1}
+		{DA32B10E-41EF-4AA0-A5CE-0AC6AA85A205} = {7B95CD87-A04E-4B32-AE81-DAF792FE02B1}
 	EndGlobalSection
 EndGlobal
