@@ -1,24 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using FluentAssertions;
 
 namespace MongoDBApplicaiton
 {
-
-    public class TestMongoDB
+    public class TestMongoDb
     {
-        protected static IMongoClient _client;
-        protected static IMongoDatabase _database;
+        protected static IMongoClient Client;
+        protected static IMongoDatabase Database;
 
-        public  static void TestData()
+        public static void TestData()
         {
-            _client = new MongoClient();
-            _database = _client.GetDatabase("test");
+            Client = new MongoClient();
+            Database = Client.GetDatabase("test");
 
             var document = new BsonDocument
             {
@@ -54,48 +51,50 @@ namespace MongoDBApplicaiton
                 {"restaurant_id", "41704620"}
             };
 
-            var collection = _database.GetCollection<BsonDocument>("restaurants");
+            var collection = Database.GetCollection<BsonDocument>("restaurants");
             collection.InsertOneAsync(document);
 
             var filter = new BsonDocument();
-            var count = 0;
-            string value = "Empty";
             using (var cursor = collection.FindAsync(filter).Result)
             {
                 while (cursor.MoveNextAsync().Result)
                 {
                     var batch = cursor.Current;
-                    foreach (var fetcheddocument in batch)
+                    foreach (var unused in batch)
                     {
                         // process document
-                        count.Should().Be(25359);
+                        unused.AllowDuplicateNames = true;
+                        {
+                            var i = unused.ElementCount;
+                        }
+                        //   count.Should().Be(25359);
 
-                        count++;
+                        Count++;
                     }
                 }
             }
         }
+
+        public static long Count { get; set; }
     }
 
     public class TestAttributeData
     {
-       [Required]
-        public DateTime? date { get; set; }
+        [Required]
+        public DateTime? Date { get; set; }
     }
+
     public class Program
     {
-
-       
         public static void Main(string[] args)
         {
+            TestAttributeData testAttribute = new TestAttributeData();
+            // testAttribute.date=DateTime.UtcNow;
+            var vc = new ValidationContext(testAttribute, null, null);
+            List<ValidationResult> result = new List<ValidationResult>();
+            var unused = Validator.TryValidateObject(testAttribute, vc, result, true);
 
-            TestAttributeData testAttribute=new TestAttributeData();
-           // testAttribute.date=DateTime.UtcNow;
-            var vc=new ValidationContext(testAttribute,null,null);
-            List<System.ComponentModel.DataAnnotations.ValidationResult> result=new List<ValidationResult>();
-            var isvalid = Validator.TryValidateObject(testAttribute, vc, result,true);
-
-            TestMongoDB.TestData();
+            TestMongoDb.TestData();
         }
     }
 }

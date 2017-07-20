@@ -1,4 +1,4 @@
-﻿{
+{
   "version": "1.0.0-*",
   "buildOptions": {
     "emitEntryPoint": true
@@ -15,6 +15,8 @@
     "MongoDB.Bson": "2.4.4",
     "MongoDB.Driver": "2.4.4",
     "MongoDB.Driver.Core": "2.4.4",
+    "runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR": "1.1.0",
+    "System.Runtime.Serialization.Primitives": "4.1.1",
     "WindowsAzure.Storage": "8.2.0"
   },
 

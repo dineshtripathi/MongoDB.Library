@@ -1,0 +1,20 @@
+﻿{
+  "ConnectionString": {
+    "IpAddress": "localhost",
+    "PortNumber": "20137",
+    "IsAuthorized": true
+  },
+  "Database": {
+    "LocalDBPath": "d:\\MyDatabase\\Data",
+    "DatabaseName": "MyMDbDatabase"
+  },
+  "Credentials":
+  {
+    "UserName": "localMongoDBUser",
+    "Password": "localMongoDBPassword",
+    "JWTToken" : "Token"  
+  } ,
+  "IsClustered": false,
+  "IsGeoReplicated": true
+}
+
