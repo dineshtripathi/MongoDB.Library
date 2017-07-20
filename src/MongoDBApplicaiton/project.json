@@ -5,19 +5,22 @@
   },
 
   "dependencies": {
-    "FluentAssertions": "4.17.0",
+    "AutoMapper": "6.1.1",
+    "Autofac.Configuration": "4.0.1",
     "Microsoft.Azure.Management.Search": "1.0.2",
     "Microsoft.Azure.Search": "3.0.4",
-    "Microsoft.NETCore.App": {
-      "type": "platform",
-      "version": "1.0.1"
-    },
     "MongoDB.Bson": "2.4.4",
     "MongoDB.Driver": "2.4.4",
     "MongoDB.Driver.Core": "2.4.4",
-    "runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR": "1.1.0",
-    "System.Runtime.Serialization.Primitives": "4.1.1",
-    "WindowsAzure.Storage": "8.2.0"
+    "WindowsAzure.Storage": "8.2.0",
+    "FluentAssertions": "4.19.3",
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.1.2"
+    },
+    "runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR": "1.1.2",
+    "System.Runtime.Serialization.Primitives": "4.3.0",
+    "Autofac": "4.6.0"
   },
 
   "frameworks": {
