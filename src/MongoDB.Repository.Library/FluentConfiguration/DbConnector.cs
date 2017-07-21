@@ -1,6 +1,6 @@
 ﻿using MongoDB.Driver.Core.Authentication;
 
-namespace MongoDBApplicaiton.FluentConfiguration
+namespace MongoDB.Repository.Library.FluentConfiguration
 {
     public class DbConnector : IDbConnector
     {

@@ -1,4 +1,4 @@
-﻿namespace MongoDBApplicaiton.FluentConfiguration
+﻿namespace MongoDB.Repository.Library.FluentConfiguration
 {
     public class Database
     {

@@ -1,10 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.WindowsAzure.Storage;
+﻿using System.Threading.Tasks;
 using MongoDB.Repository.Poco;
 
-namespace MongoDBApplicaiton
+namespace MongoDB.Repository.Library
 {
     public interface IMongoDbRepository
     {

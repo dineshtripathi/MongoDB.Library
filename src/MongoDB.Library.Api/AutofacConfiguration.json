@@ -1,0 +1,8 @@
+﻿{
+    "defaultAssembly": "MongoDB.Repository.Library",
+    "modules": [
+      {
+        "type": "MongoDB.Repository.Library.AutofacRepositoryModule, MongoDB.Repository.Library"
+      }
+    ]
+}

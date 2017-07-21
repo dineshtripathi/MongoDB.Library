@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using MongoDB.Bson;
 using MongoDB.Driver;
-using FluentAssertions;
 
-namespace MongoDBApplicaiton
+namespace MongoDB.Repository.Library
 {
     public class TestMongoDb
     {

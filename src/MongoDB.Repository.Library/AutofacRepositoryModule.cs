@@ -3,7 +3,8 @@ using System.Linq;
 using System.Reflection;
 using Autofac;
 using AutoMapper;
-namespace MongoDBApplicaiton
+
+namespace MongoDB.Repository.Library
 {
     public class AutofacRepositoryModule :Autofac.Module
     {

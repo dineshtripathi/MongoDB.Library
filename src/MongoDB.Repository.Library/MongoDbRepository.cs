@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
+using MongoDB.Repository.Library.FluentConfiguration;
 using MongoDB.Repository.Poco;
-using MongoDBApplicaiton.FluentConfiguration;
 
-namespace MongoDBApplicaiton
+namespace MongoDB.Repository.Library
 {
     public class MongoDbRepository : IMongoDbRepository,IDisposable
     {
