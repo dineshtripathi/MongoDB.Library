@@ -19,8 +19,8 @@
     "runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR": "1.1.2",
     "System.Runtime.Serialization.Primitives": "4.3.0",
     "Autofac": "4.6.0",
-    "MongoDB.Repository.Poco": "1.0.0-*"
-  },
+    "MongoDB.Repository.Poco": "1.0.0-*",
+    "System.Reflection": "4.3.0"  },
   "frameworks": {
     "netcoreapp1.0": {
       "imports": "dnxcore50"

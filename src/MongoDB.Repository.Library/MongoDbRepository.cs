@@ -5,7 +5,7 @@ using MongoDBApplicaiton.FluentConfiguration;
 
 namespace MongoDBApplicaiton
 {
-    public class MongoDbRepository : IMongoDbRepository
+    public class MongoDbRepository : IMongoDbRepository,IDisposable
     {
         private readonly IDbConnector _configuration;
 
@@ -29,6 +29,11 @@ namespace MongoDBApplicaiton
         }
 
         public Task<IMongoDbRepository> Query(Account account)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
