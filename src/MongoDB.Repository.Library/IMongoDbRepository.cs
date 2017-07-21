@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace MongoDBApplicaiton
 {
-    public interface IDbProvider
+    public interface IMongoDbRepository
     {
+
     }
 }
