@@ -1,4 +1,4 @@
-namespace MongoDB.Client.Library
+namespace MongoDB.Client.Library.Interfaces
 {
     public interface IProvideResult
     {

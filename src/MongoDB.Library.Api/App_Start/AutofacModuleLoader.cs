@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Autofac;
+﻿using Autofac;
 using Autofac.Configuration;
 using Microsoft.Extensions.Configuration;
 
-namespace MongoDB.Library.Api.App_Start
+namespace MongoDB.Library.Api
 {
     public class AutofacModuleLoader
     {

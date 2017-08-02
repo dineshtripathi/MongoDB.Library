@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace MongoDB.Library.Api.App_Start
+﻿namespace MongoDB.Library.Api
 {
     public class AutofacBuilderConfig
     {
