@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 
 namespace MongoDB.PublishSubscribe.EventAggregator
 {
-    public class Class1
+    public class EventAggregator:IEventAggregator
     {
-        public Class1()
+        public EventAggregator()
         {
         }
+
+        public Guid EventAggregatorId { get; set; }
     }
 }
