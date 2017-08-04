@@ -1,0 +1,27 @@
+﻿{
+  "Group":[{
+ 
+    "Database": {
+      "LocalDBPath": "d:\\MyDatabase\\Data",
+      "DatabaseName": "MyMDbDatabase",
+      "ConnectionString": {
+        "IpAddress": "localhost",
+        "PortNumber": "20137",
+        "IsAuthorized": true,
+        "ConnectionTimeout": "30",
+        "SocketTimeout": "30",
+        "Server" : "" 
+      },
+      "Credentials": {
+        "UserName": "localMongoDBUser",
+        "Password": "localMongoDBPassword",
+        "JWTToken": "Token"
+      }
+    }
+ 
+  }] ,
+  "IsClustered": false,
+  "IsGeoReplicated": true
+}
+
+
