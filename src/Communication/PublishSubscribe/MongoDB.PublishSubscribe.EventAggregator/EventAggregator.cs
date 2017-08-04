@@ -17,37 +17,37 @@ namespace MongoDB.PublishSubscribe.EventAggregator
         public event EventHandler<MessageHubErrorEventArgs> OnError;
         public async Task RegisterGlobalHandler(Action<Type, object> onMessage, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            await Task.FromResult(new NotImplementedException());
         }
 
         public async Task Publish<T>(T message,CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            await Task.FromResult(new NotImplementedException());
         }
 
         public async Task<Guid> Subscribe<T>(Action<T> action, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await Task.FromResult(new Guid());
         }
 
         public async Task<Guid> Subscribe<T>(Action<T> action, TimeSpan throttleBy, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await Task.FromResult(new Guid());
         }
 
         public async Task UnSubscribe(Guid token, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+             await Task.FromResult(new Guid());
         }
 
         public async Task<bool> IsSubscribed(Guid token, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await Task.FromResult(false);
         }
 
         public async Task ClearSubscriptions( CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+             await Task.FromResult(new Guid());
         }
     }
 }
