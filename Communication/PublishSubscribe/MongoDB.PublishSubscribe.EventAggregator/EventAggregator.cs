@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -48,6 +46,11 @@ namespace MongoDB.PublishSubscribe.EventAggregator
         public async Task ClearSubscriptions( CancellationToken cancellationToken)
         {
              await Task.FromResult(new Guid()).ConfigureAwait(false);
+        }
+
+        protected virtual void OnOnError(MessageHubErrorEventArgs e)
+        {
+            OnError?.Invoke(this, e);
         }
     }
 }
