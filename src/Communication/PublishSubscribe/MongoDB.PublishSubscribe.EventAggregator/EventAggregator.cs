@@ -17,37 +17,37 @@ namespace MongoDB.PublishSubscribe.EventAggregator
         public event EventHandler<MessageHubErrorEventArgs> OnError;
         public async Task RegisterGlobalHandler(Action<Type, object> onMessage, CancellationToken cancellationToken)
         {
-            await Task.FromResult(new NotImplementedException());
+            await Task.FromResult(new NotImplementedException()).ConfigureAwait(false);
         }
 
         public async Task Publish<T>(T message,CancellationToken cancellationToken)
         {
-            await Task.FromResult(new NotImplementedException());
+            await Task.FromResult(new NotImplementedException()).ConfigureAwait(false);
         }
 
         public async Task<Guid> Subscribe<T>(Action<T> action, CancellationToken cancellationToken)
         {
-            return await Task.FromResult(new Guid());
+            return await Task.FromResult(new Guid()).ConfigureAwait(false);
         }
 
         public async Task<Guid> Subscribe<T>(Action<T> action, TimeSpan throttleBy, CancellationToken cancellationToken)
         {
-            return await Task.FromResult(new Guid());
+            return await Task.FromResult(new Guid()).ConfigureAwait(false);
         }
 
         public async Task UnSubscribe(Guid token, CancellationToken cancellationToken)
         {
-             await Task.FromResult(new Guid());
+             await Task.FromResult(new Guid()).ConfigureAwait(false);
         }
 
         public async Task<bool> IsSubscribed(Guid token, CancellationToken cancellationToken)
         {
-            return await Task.FromResult(false);
+            return await Task.FromResult(false).ConfigureAwait(false);
         }
 
         public async Task ClearSubscriptions( CancellationToken cancellationToken)
         {
-             await Task.FromResult(new Guid());
+             await Task.FromResult(new Guid()).ConfigureAwait(false);
         }
     }
 }
