@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7EAA355A-A17C-4D87-B3AB-3CAD22BC2081}"
+	ProjectSection(SolutionItems) = preProject
+		.bettercodehub.yml = .bettercodehub.yml
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MongoDB.PocoJson.Model", "MongoDB.PocoJson.Model", "{87EF08DA-1948-4F58-AF22-8856490EE6D8}"
 EndProject

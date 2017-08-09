@@ -1,0 +1,7 @@
+exclude:
+- /Caching.Data/wwwroot/.*
+- /DMZ-Public/MongoDB.WebApi.Client/bower_components/respond/.*
+component_depth: 1
+languages:
+- csharp
+- javascript
