@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <AssemblyName>Infinity.WithNoSql.Repository.Client.Library</AssemblyName>
+    <PackageId>Infinity.WithNoSql.Repository.Client.Library</PackageId>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.0" />
+    <PackageReference Include="System.Runtime.Serialization.Formatters" Version="4.3.0" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
+    <PackageReference Include="System.Reflection" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Infinity.WithNoSql.Repository.PocoJson.Model\Infinity.WithNoSql.Repository.PocoJson.Model.csproj" />
+    <ProjectReference Include="..\Infinity.WithNoSql.Repository.PocoJson.Model\Infinity.WithNoSql.Repository.PocoJson.Model\Infinity.WithNoSql.Repository.PocoJson.Model.csproj" />
+    <ProjectReference Include="..\MongoDB.Repository.PocoJson.Model\MongoDB.Repository.PocoJson.Model\Infinity.WithNoSql.Repository.PocoJson.Model.csproj" />
+  </ItemGroup>
+
+</Project>

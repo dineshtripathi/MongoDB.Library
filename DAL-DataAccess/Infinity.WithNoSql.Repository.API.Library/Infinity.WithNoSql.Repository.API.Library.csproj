@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <AssemblyName>Infinity.WithNoSql.Repository.API.Library</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>Infinity.WithNoSql.Repository.API.Library</PackageId>
+    <RuntimeFrameworkVersion>1.1.2</RuntimeFrameworkVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+    <PackageReference Include="Autofac.Configuration" Version="4.0.1" />
+    <PackageReference Include="Microsoft.Azure.Management.Search" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Azure.Search" Version="3.0.4" />
+    <PackageReference Include="MongoDB.Bson" Version="2.4.4" />
+    <PackageReference Include="MongoDB.Driver" Version="2.4.4" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.4.4" />
+    <PackageReference Include="WindowsAzure.Storage" Version="8.2.0" />
+    <PackageReference Include="FluentAssertions" Version="4.19.3" />
+    <PackageReference Include="runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR" Version="1.1.2" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
+    <PackageReference Include="Autofac" Version="4.6.0" />
+    <PackageReference Include="System.Reflection" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Infinity.WithNoSql.Repository.PocoJson.Model\Infinity.WithNoSql.Repository.PocoJson.Model.csproj" />
+    <ProjectReference Include="..\Infinity.WithNoSql.Repository.PocoJson.Model\Infinity.WithNoSql.Repository.PocoJson.Model\Infinity.WithNoSql.Repository.PocoJson.Model.csproj" />
+  </ItemGroup>
+
+</Project>
